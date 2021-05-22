@@ -1,5 +1,5 @@
 class Sorter {
-    constructor(public collection:number[]){
+    constructor(public collection:number[] | string){
     }
     sort(): void {
         // const length = this.collection.length;
@@ -8,11 +8,23 @@ class Sorter {
         {
             for (let j=0;j<length-i-1;j++)
             {
-                if(this.collection[j]>this.collection[j+1]){
-                    const temp = this.collection[j];
-                    this.collection[j]=this.collection[j+1];
-                    this.collection[j+1] = temp;
+                //If collection is an array of numbers
+                //All of this works if collection is array of numbers
+                //Gonna use Type Guard
+                if(this.collection instanceof Array){
+                    if(this.collection[j]>this.collection[j+1]){
+                        const temp = this.collection[j];
+                        this.collection[j]=this.collection[j+1];
+                        this.collection[j+1] = temp;
+                    }
                 }
+                // type guard for string bool number or symbol only:
+                if(typeof this.collection === 'string')
+                {
+                    this.collection.
+                }
+
+                //Only going to work if collection is a string
             }
         }
     }
