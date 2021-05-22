@@ -8,6 +8,8 @@ While every folder / example contains package.json I wanna write the total list 
 
 - VS Code (editor, prettier: extension)
 - npm (Node Package Manager, installed bundled with Node.JS)
+- nodemon
+- concurrently
 - typescript (from npm)
 - ts-node (from npm)
 - parcel-bundler (I have it installed globally)
