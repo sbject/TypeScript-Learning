@@ -14,7 +14,7 @@ import {LinkedList} from './LinkedList';
 // console.log(numbersCollection.data);
 
 const linkedList = new LinkedList();
-linkedList.add(500);
+linkedList.add(700);
 linkedList.add(800);
 linkedList.add(-10);
 linkedList.add(0);

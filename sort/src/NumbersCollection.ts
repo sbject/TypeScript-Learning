@@ -1,3 +1,5 @@
+import {Sorter} from './sorter';
+
 export class NumbersCollection {
     // data: number[];
     // constructor(data: number[]){
