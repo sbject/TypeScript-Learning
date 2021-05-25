@@ -1,11 +1,14 @@
+import { Sorter } from "./sorter";
+
 class Node {
 
     next:Node | null = null; //by default next is null also an interesting way to reference object of the same kind
     constructor(public data:number){}
 }
 
-export class LinkedList {
+export class LinkedList extends Sorter {
     head: Node | null = null;
+
 
     add(data :number): void {
         const node = new Node(data);

@@ -1,12 +1,13 @@
 import {Sorter} from './sorter';
 
-export class NumbersCollection {
+export class NumbersCollection extends Sorter {
     // data: number[];
     // constructor(data: number[]){
     //     this.data = data;
     // }
     //cause this is identical to:
     constructor(public data: number[]){
+        super();
 
     }
 
