@@ -1,8 +1,13 @@
 import fs from 'fs';
+// import {MatchResult} from './MatchResult';
 
-export class CsvFileReader {
-    data: string[][] = [];
+// type MatchData = [Date,string,string,number,number,MatchResult,string];
+
+//Use generic
+export abstract class CsvFileReader<T> {
+    data: T[] = [];
     constructor(public filename:string){}
+    abstract mapRow(row:string[]):T;
 
     read():void {
         this.data = fs.readFileSync(this.filename,{
@@ -14,5 +19,6 @@ export class CsvFileReader {
             return row.split(',');
         }
         )
+        .map(this.mapRow);
     }
 }
