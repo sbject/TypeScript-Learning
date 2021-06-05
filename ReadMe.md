@@ -16,3 +16,5 @@ While every folder / example contains package.json I wanna write the total list 
 - faker
 - @types/faker
 - @types/googlemaps
+- json-server (global install)
+- axios (local install for web app)
